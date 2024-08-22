@@ -1,5 +1,4 @@
 import { Title } from "@solidjs/meta";
-import { Suspense } from "solid-js";
 import Counter from "~/components/Counter";
 import { MovieList } from "~/components/MovieList";
 
@@ -10,9 +9,7 @@ export default function Home() {
       <h1>Hello world!</h1>
       <Counter />
       <h3>Star Wars Movies</h3>
-      <Suspense fallback={<p>Loading ...</p>}>
-        <MovieList />
-      </Suspense>
+      <MovieList />
       <p>
         Visit{" "}
         <a href="https://start.solidjs.com" target="_blank">
